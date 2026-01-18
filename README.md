@@ -6,9 +6,9 @@ A modern and responsive school website designed for Saraswati Shishu Vidya Mandi
 
 📌 SCHOOL INFORMATION
 
-👨‍🏫 Principal: S Kumar Srivastava
+👨‍🏫 Principal: Shri Satyendra Kumar Srivastava
 
-📞 Contact: +91 81023XXXXX
+📞 Contact: +91 9934850947
 
 📍 Address: Manua Ismailpur, Hajipur, Vaishali, Bihar, India
 
@@ -31,7 +31,7 @@ A modern and responsive school website designed for Saraswati Shishu Vidya Mandi
 
 ⚠️ DISCLAIMER
 
-This project is currently frontend-based.
+This is currently frontend-based.
 Student service modules are demo versions and require backend integration for live use.
 
 🚀 FUTURE SCOPE
@@ -46,5 +46,3 @@ Dynamic Notice Board System
 
 🚀 Servana Labs
 🌐 https://servanalabs.vercel.app
-
-Developed for Saraswati Shishu Vidya Mandir, Hajipur
