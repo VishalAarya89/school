@@ -23,6 +23,38 @@ document.getElementById("contactForm")?.addEventListener("submit", function(e){
   this.reset();
 });
 
+function sendMessage(e){
+  e.preventDefault(); // page reload stop
+
+  // Get form values
+  let name = document.querySelector('#contactForm input[type="text"]').value;
+  let mobile = document.querySelector('#contactForm input[type="tel"]').value;
+  let email = document.querySelector('#contactForm input[type="email"]').value;
+  let msg = document.querySelector('#contactForm textarea').value;
+
+  // --------- WhatsApp ---------
+  let waNumber = "918102375744"; // 91 + school mobile 
+  let waText = `New Enquiry%0AName: ${name}%0AMobile: ${mobile}%0AEmail: ${email}%0AMessage: ${msg}`;
+  let waURL = `https://wa.me/${waNumber}?text=${waText}`;
+
+  // --------- Email ---------
+  let emailTo = "vishalaarya81023@gmail.com"; 
+  let emailSub = encodeURIComponent("New Enquiry from Website");
+  let emailBody = encodeURIComponent(`Name: ${name}\nMobile: ${mobile}\nEmail: ${email}\nMessage: ${msg}`);
+  let mailURL = `mailto:${emailTo}?subject=${emailSub}&body=${emailBody}`;
+
+  // Show sending message
+  document.getElementById("contactMsg").innerText = "✅ Sending message...";
+
+  // Open WhatsApp and Email in new tabs
+  window.open(waURL, "_blank");
+  window.open(mailURL, "_blank");
+
+  // Clear form
+  document.getElementById("contactForm").reset();
+}
+
+
 // Demo student result data
 const results = [
   {
@@ -175,4 +207,5 @@ function checkFee(){
     </div>
   `;
 }
+
 
