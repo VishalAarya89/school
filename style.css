@@ -7,6 +7,14 @@
   
   body {
     background: #f5f7fb;
+    padding-top: 110px;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
   }
   
   /* Top bar */
@@ -56,7 +64,7 @@
   .hero {
     height: 80vh;
     background: linear-gradient(rgba(13,71,161,0.7), rgba(13,71,161,0.7)),
-                url("school.webp") center/cover;
+                url("ssvm.webp") center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,7 +131,8 @@
     background: #0d47a1;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px 10px;
+    margin-top: 60px;
   }
   
   /* Responsive */
@@ -149,5 +158,637 @@
     .hero h1 {
       font-size: 32px;
     }
+  }
+  
+  .page-banner {
+    background: linear-gradient(rgba(13,71,161,0.8), rgba(13,71,161,0.8)),
+                url("https://images.unsplash.com/photo-1600056781440-98ed0e2e5c4b") center/cover;
+    padding: 40px 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* About us */
+  .about-page {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 25px;
+  }
+  
+  .about-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .about-box h2 {
+    color: #0d47a1;
+    margin-bottom: 10px;
+  }
+  
+  .active {
+    color: #0d47a1;
+    border-bottom: 2px solid #0d47a1;
+  }
+  
+
+  /*  Academics  */
+  .academics-page {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 25px;
+  }
+  
+  .academic-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .academic-box h2 {
+    color: #0d47a1;
+    margin-bottom: 10px;
+  }
+  
+  .academic-box ul {
+    margin-left: 18px;
+    margin-top: 10px;
+  }
+  
+
+  /* Faculty */
+  .faculty-page {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 25px;
+  }
+  
+  .faculty-card {
+    background: white;
+    padding: 25px 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: 0.3s;
+  }
+  
+  .faculty-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .faculty-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .faculty-card h3 {
+    color: #0d47a1;
+    margin: 10px 0 5px;
+  }
+  
+  .principal-card {
+    border: 2px solid #0d47a1;
+  }
+  
+  /* Facilities */
+  .facilities-page {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 25px;
+  }
+  
+  .facility-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: 0.3s;
+  }
+  
+  .facility-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .facility-card h2 {
+    color: #0d47a1;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  /* Event */
+  .events-section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .section-title {
+    text-align: center;
+    color: #0d47a1;
+    margin-bottom: 25px;
+    font-size: 28px;
+  }
+  
+  .event-card {
+    background: white;
+    padding: 22px;
+    margin-bottom: 18px;
+    border-left: 6px solid #0d47a1;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .event-card h3 {
+    color: #0d47a1;
+    margin-bottom: 8px;
+  }
+  
+  .event-card.upcoming {
+    border-left-color: #ff9800;
+  }
+  
+  /* Notice Board */
+  .notice-page {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .notice-card {
+    background: white;
+    padding: 22px;
+    margin-bottom: 18px;
+    border-left: 6px solid #0d47a1;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .notice-card h3 {
+    color: #0d47a1;
+    margin-bottom: 8px;
+  }
+  
+  .notice-card span {
+    font-size: 13px;
+    color: gray;
+  }
+  
+  .notice-card.new {
+    border-left-color: #ff9800;
+    background: #fff8e1;
+  }
+  
+  /* Fees */
+  .fee-page {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  th, td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background: #0d47a1;
+    color: white;
+  }
+  
+  tr:hover {
+    background: #f1f5ff;
+  }
+  
+  .fee-note {
+    background: #fff;
+    margin-top: 30px;
+    padding: 22px;
+    border-left: 6px solid #ff9800;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .fee-note h3 {
+    margin-bottom: 10px;
+    color: #0d47a1;
+  }
+  
+  .fee-note ul {
+    margin-left: 20px;
+  }
+  
+  /* Admission */
+  .admission-info {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .admission-info h2 {
+    color: #0d47a1;
+    margin: 20px 0 10px;
+  }
+  
+  .admission-info ol, .admission-info ul {
+    margin-left: 20px;
+  }
+  
+  .admission-form {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    background: #f1f5ff;
+    border-radius: 12px;
+  }
+  
+  .admission-form h2 {
+    text-align: center;
+    color: #0d47a1;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input, 
+  .form-group select, 
+  .form-group textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-group.full {
+    grid-column: 1/3;
+  }
+  
+  button {
+    grid-column: 1/3;
+    padding: 12px;
+    background: #0d47a1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #08306b;
+  }
+  
+  #admissionFormMsg {
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+  }
+  
+  @media(max-width:700px){
+    form {
+      grid-template-columns: 1fr;
+    }
+    .form-group.full, button {
+      grid-column: 1/2;
+    }
+  }
+  
+  /* Career */
+  .career-section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .career-section h2 {
+    text-align: center;
+    color: #0d47a1;
+    margin-bottom: 30px;
+  }
+  
+  .job-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 18px;
+    border-left: 6px solid #0d47a1;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .job-card h3 {
+    color: #0d47a1;
+  }
+  
+  .career-form {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    background: #f1f5ff;
+    border-radius: 12px;
+  }
+  
+  .career-form h2 {
+    text-align: center;
+    color: #0d47a1;
+    margin-bottom: 20px;
+  }
+  
+  #careerMsg {
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+  }
+  
+  /* contact */
+  .contact-section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .contact-info, .contact-form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .contact-info h2, .contact-form h2 {
+    color: #0d47a1;
+    margin-bottom: 15px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-form button {
+    padding: 12px;
+    background: #0d47a1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .map-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .map-section iframe {
+    width: 90%;
+    max-width: 1000px;
+    height: 350px;
+    border: 0;
+    border-radius: 12px;
+  }
+  
+  #contactMsg {
+    margin-top: 10px;
+    color: green;
+    text-align: center;
+  }
+  
+  @media(max-width:800px){
+    .contact-section {
+      grid-template-columns: 1fr;
+    }
+  }
+  /* Result */
+  .result-section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .result-search {
+    margin: 20px 0;
+  }
+  
+  .result-search input {
+    padding: 10px;
+    width: 220px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .result-search button {
+    padding: 10px 16px;
+    border: none;
+    background: #0d47a1;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  #resultBox {
+    margin-top: 25px;
+  }
+  .result-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+  }
+  .result-card h3 {
+    color: #0d47a1;
+    margin-bottom: 10px;
+  }
+  .result-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .result-table th, .result-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  .result-table th {
+    background: #0d47a1;
+    color: white;
+  }
+  /* Attendance */
+  .attendance-section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .attendance-search {
+    margin: 20px 0;
+  }
+  
+  .attendance-search input {
+    padding: 10px;
+    width: 220px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .attendance-search button {
+    padding: 10px 16px;
+    border: none;
+    background: #0d47a1;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  #attendanceBox {
+    margin-top: 25px;
+  }
+  
+  .att-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .att-card h3 {
+    color: #0d47a1;
+    margin-bottom: 10px;
+  }
+  
+  .att-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .att-table th, .att-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .att-table th {
+    background: #0d47a1;
+    color: white;
+  }
+  
+  /* Pending Fee */
+  .fee-status-section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .fee-search {
+    margin: 20px 0;
+  }
+  
+  .fee-search input {
+    padding: 10px;
+    width: 220px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .fee-search button {
+    padding: 10px 16px;
+    border: none;
+    background: #0d47a1;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  #feeBox {
+    margin-top: 25px;
+  }
+  
+  .fee-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .fee-card h3 {
+    color: #0d47a1;
+    margin-bottom: 10px;
+  }
+  
+  .fee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .fee-table th, .fee-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .fee-table th {
+    background: #0d47a1;
+    color: white;
+  }
+  .pending {
+    color: red;
+    font-weight: bold;
+  }
+  .paid {
+    color: green;
+    font-weight: bold;
   }
   
