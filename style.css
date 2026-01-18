@@ -16,7 +16,9 @@
     width: 100%;
     z-index: 1000;
   }
-  
+  div[id] {
+    scroll-margin-top: 80px;
+   }
   /* Top bar */
   .top-bar {
     background: #0d47a1;
@@ -792,4 +794,5 @@
     font-weight: bold;
   }
   
+
 
