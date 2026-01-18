@@ -64,7 +64,7 @@
   .hero {
     height: 80vh;
     background: linear-gradient(rgba(13,71,161,0.7), rgba(13,71,161,0.7)),
-                url("ssvm.webp") center/cover;
+                url("school.webp") center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -792,3 +792,4 @@
     font-weight: bold;
   }
   
+
