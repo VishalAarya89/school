@@ -37,6 +37,22 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    /* Small screen menu hide*/
+    @media (max-width:768px) {
+      .navbar ul {
+        display: none;    /* hide by default */
+        flex-direction: column;
+        gap: 15px;
+        transition: all 0.3s ease;
+      }
+      .navbar ul.show {
+        display: flex;    /* show when toggle-active */
+      }
+      .navbar .menu-btn {
+        display: block;   /* show menu icon */
+        cursor: pointer;
+      }
+    }
   }
   
   .logo {
@@ -794,5 +810,6 @@
     font-weight: bold;
   }
   
+
 
 
