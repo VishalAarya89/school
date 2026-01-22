@@ -1,6 +1,12 @@
 function toggleMenu() {
-    document.getElementById("menu").classList.toggle("show");
-  }
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("show");
+}
+document.querySelectorAll("#menu a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.getElementById("menu").classList.remove("show");
+  });
+});
   
   // Admission form message
   document.getElementById("admissionForm")?.addEventListener("submit", function(e){
@@ -207,5 +213,6 @@ function checkFee(){
     </div>
   `;
 }
+
 
 
