@@ -1,16 +1,16 @@
-🌸 SARASWATI SHISHU VIDYA MANDIR, HAJIPUR
+🌸 SCHOOL FORMAT, HAJIPUR
 
 🏫 OFFICIAL SCHOOL WEBSITE PROJECT
 
-A modern and responsive school website designed for Saraswati Shishu Vidya Mandir, Hajipur (Vaishali, Bihar) to provide digital access to school information, academics, student services, and announcements.
+A modern and responsive school website designed for School, Vaishali to provide digital access to school information, academics, student services, and announcements.
 
 📌 SCHOOL INFORMATION
 
-👨‍🏫 Principal: Shri Satyendra Kumar Srivastava
+👨‍🏫 Founnder: VK Arya
 
-📞 Contact: +91 9934850947
+📞 Contact: +91 8102375744
 
-📍 Address: Manua Ismailpur, Hajipur, Vaishali, Bihar, India
+📍 Address: Vaishali, Bihar, India
 
 🌐 WEBSITE MODULES
 
